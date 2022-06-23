@@ -139,7 +139,7 @@ body {
 
 /* Business Plan */
 .plan {
-    padding-top: 160px;
+    padding-block: 160px;
     font-size: 14px;
 }
 
@@ -267,6 +267,36 @@ body {
 }
 
 /* Plan Card 100% */
-.plan .container:nth-child(4) .row .col {
+.plan .container:nth-child(3) .row:last-child .col {
     flex-basis: 100%;
+}
+
+.plan .container:nth-child(3) .row:last-child .description {
+    position: initial;
+    padding-bottom: 0;
+}
+
+.plan .container:nth-child(3) .row:last-child .header {
+    padding-bottom: 0;
+}
+
+.plan .container:nth-child(3) .row:last-child .header__price {
+    margin-bottom: 50px;
+}
+
+.plan .container:nth-child(3) .row:last-child .body {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.plan .container:nth-child(3) .row:last-child .btn {
+    position: absolute;
+    width: fit-content;
+    padding-inline: 40px;
+    top: 40px;
+    right: 30px;
+}
+
+.plan .container:nth-child(3) .row:last-child .body__description::after {
+    display: none;
 }
