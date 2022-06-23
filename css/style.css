@@ -207,6 +207,10 @@ body {
     border-bottom: 1px solid #eee;
 }
 
+.plan__for i {
+    margin-right: 5px;
+}
+
 .plan__body {
     padding: 40px 30px 50px;
 }
@@ -285,17 +289,27 @@ body {
 }
 
 .plan .container:nth-child(3) .row:last-child .body {
-    position: relative;
+    /* position: relative; */
+    display: flex;
     padding-bottom: 30px;
 }
 
-.plan .container:nth-child(3) .row:last-child .btn {
+.plan .container:nth-child(3) .row:last-child .header {
+    flex-basis: 78%;
+    padding-right: 120px;
+}
+
+.plan .container:nth-child(3) .row:last-child .description {
+    flex-basis: 22%;
+}
+
+/* .plan .container:nth-child(3) .row:last-child .btn {
     position: absolute;
     width: fit-content;
     padding-inline: 40px;
     top: 40px;
     right: 30px;
-}
+} */
 
 .plan .container:nth-child(3) .row:last-child .body__description::after {
     display: none;
