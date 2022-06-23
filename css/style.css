@@ -14,7 +14,20 @@ menu {
     list-style-type: none;
 }
 
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
 /* Regole di layout */
+body {
+    font-family: sans-serif;
+}
+
 .container {
     max-width: 1000px;
     margin-inline: auto;
@@ -22,6 +35,10 @@ menu {
 
 .container--large {
     max-width: 1200px;
+}
+
+.row {
+    display: flex;
 }
 
 /* Utility */
@@ -73,4 +90,49 @@ menu {
 
 .menu--contatti {
     margin-left: auto;
+}
+
+/* Hero */
+.hero {
+    padding-top: 90px;
+    background-color: #B4D0E7;
+}
+
+.hero__header {
+    padding-bottom: 50px;
+}
+
+.hero__title {
+    font-size: 76px;
+    font-weight: bold;
+}
+
+.hero__body .col:first-child {
+    flex-basis: 29.5%;
+}
+
+.hero__body .col:last-child {
+    flex-basis: 70.5%;
+}
+
+.hero__body .btn {
+    margin-bottom: 30px;
+    padding-inline: 15px;
+    line-height: 40px;
+}
+
+.hero .description__text:first-of-type {
+    margin-bottom: 30px;
+}
+
+.hero .description__text:last-of-type {
+    margin-bottom: 143px;
+}
+
+.hero .body__image {
+    position: relative;
+}
+
+.hero .body__image img {
+    position: absolute;
 }
