@@ -1,0 +1,21 @@
+/* Regole di reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Regole di layout */
+.container {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.container--large {
+    max-width: 1200px;
+}
+
+/* Utility */
+
+
+/* Header */
