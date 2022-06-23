@@ -143,11 +143,12 @@ body {
     font-size: 14px;
 }
 
-.plan .row:first-child {
+.plan .container:nth-child(3) .row:first-child {
+    margin-bottom: 50px;
     column-gap: 50px;
 }
 
-.plan .row:first-child .col {
+.plan .container:nth-child(3) .row:first-child .col {
     flex-basis: 30%;
 }
 
@@ -155,33 +156,10 @@ body {
     flex-basis: 100%;
 }
 
-.plan__card {
-    border: 1px solid #eee;
-}
-
 .plan__title {
     font-size: 38px;
     font-weight: bold;
     margin-bottom: 60px;
-}
-
-.plan__body .header {
-    padding-bottom: 50px;
-}
-
-.plan__body .header__title {
-    margin-bottom: 20px;
-    font-size: 22px;
-}
-
-.plan__body .header__price {
-    margin-bottom: 12px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.plan__body .header__validity {
-    color: #999;
 }
 
 .plan__fatturazione {
@@ -197,8 +175,30 @@ body {
     margin-right: 50px;
 }
 
-.plan__body {
-    padding: 40px 30px 50px;
+/* Plan Header */
+.plan__body .header {
+    padding-bottom: 50px;
+}
+
+.plan__body .header__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.plan__body .header__price {
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.plan__body .header__validity {
+    color: #999;
+}
+
+/* Plan Card */
+.plan__card {
+    height: 100%;
+    border: 1px solid #eee;
 }
 
 .plan__for {
@@ -207,22 +207,39 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-.plan__body .description__users,
-.plan__body .description__space {
+.plan__body {
+    padding: 40px 30px 50px;
+}
+
+.plan__body li {
+    display: flex;
     margin-bottom: 20px;
+}
+
+.plan__body .highlights li:before {
+    content: "\2713";
+    margin-right: 5px;
+    color: #0061FF;
+    font-weight: bold;
 }
 
 .plan__body .description__details {
     margin-bottom: 50px;
 }
 
-.plan__body .btn {
+.plan__body .btn,
+.highlights__title {
     margin-bottom: 35px;
 }
 
-.plan__body .body__description {
+.plan__body .description {
     position: relative;
     padding-bottom: 40px;
+}
+
+.plan__body .description i {
+    margin-right: 5px;
+    padding-top: 2px;
 }
 
 .plan__body .body__description::after {
@@ -236,11 +253,20 @@ body {
     background-color: #eee;
 }
 
-
-
+/* Plan Card Buttons */
 .plan__card .btn {
     width: 100%;
     line-height: 40px;
     font-size: 14px;
     font-weight: bold;
+}
+
+/* Plan Card Highlights */
+.plan__body .highlights {
+    padding-top: 50px;
+}
+
+/* Plan Card 100% */
+.plan .container:nth-child(4) .row .col {
+    flex-basis: 100%;
 }
