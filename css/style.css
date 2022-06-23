@@ -165,6 +165,25 @@ body {
     margin-bottom: 60px;
 }
 
+.plan__body .header {
+    padding-bottom: 50px;
+}
+
+.plan__body .header__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.plan__body .header__price {
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.plan__body .header__validity {
+    color: #999;
+}
+
 .plan__fatturazione {
     display: flex;
     padding-bottom: 50px;
@@ -178,15 +197,49 @@ body {
     margin-right: 50px;
 }
 
+.plan__body {
+    padding: 40px 30px 50px;
+}
+
 .plan__for {
+    padding-block: 11px;
     text-align: center;
     border-bottom: 1px solid #eee;
+}
+
+.plan__body .description__users,
+.plan__body .description__space {
+    margin-bottom: 20px;
+}
+
+.plan__body .description__details {
+    margin-bottom: 50px;
+}
+
+.plan__body .btn {
+    margin-bottom: 35px;
+}
+
+.plan__body .body__description {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.plan__body .body__description::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #eee;
 }
 
 
 
 .plan__card .btn {
-    padding-inline: 40px;
+    width: 100%;
     line-height: 40px;
     font-size: 14px;
     font-weight: bold;
