@@ -10,7 +10,8 @@
     color: currentColor;
 }
 
-menu {
+menu,
+ul {
     list-style-type: none;
 }
 
@@ -512,4 +513,33 @@ button {
 .cta-wrapper .btn {
     line-height: 45px;
     padding-inline: 50px;
+}
+
+/* Questions */
+.questions {
+    margin-bottom: 150px;
+}
+
+.questions__title {
+    font-size: 38px;
+    margin-bottom: 60px;
+}
+
+.questions .container:last-child>.row>.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.questions__list .item:first-child {
+    border-top: 1px solid #A0A0A0;
+}
+
+.questions__list .item {
+    padding-block: 40px;
+    border-bottom: 1px solid #A0A0A0;
+    font-weight: bold;
+}
+
+.item__arrow {
+    margin-inline: auto 45px;
 }
