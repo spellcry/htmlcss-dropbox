@@ -163,16 +163,7 @@ button {
 }
 
 .plan .container:nth-child(3) .row:first-child {
-    margin-bottom: 50px;
-    column-gap: 50px;
-}
-
-.plan .container:nth-child(3) .row:first-child .col {
-    flex-basis: 30%;
-}
-
-.plan .row:last-child .col {
-    flex-basis: 100%;
+    gap: 50px;
 }
 
 .plan__title {
@@ -215,6 +206,15 @@ button {
 }
 
 /* Plan Card */
+.plan .container:nth-child(3) .row {
+    flex-wrap: wrap;
+}
+
+.plan .container:nth-child(3) .col {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 .plan__card {
     height: 100%;
     border: 1px solid #eee;
@@ -290,47 +290,38 @@ button {
 }
 
 /* Plan Card 100% */
-.plan .container:nth-child(3) .row:last-child .col {
+.plan .col--big {
     flex-basis: 100%;
 }
 
-.plan .container:nth-child(3) .row:last-child .description {
+.plan .col--big .description {
     position: initial;
     padding-bottom: 0;
 }
 
-.plan .container:nth-child(3) .row:last-child .header {
+.plan .col--big .header {
     padding-bottom: 0;
 }
 
-.plan .container:nth-child(3) .row:last-child .header__price {
+.plan .col--big .header__price {
     margin-bottom: 50px;
 }
 
-.plan .container:nth-child(3) .row:last-child .body {
-    /* position: relative; */
+.plan .col--big .body {
     display: flex;
     padding-bottom: 30px;
 }
 
-.plan .container:nth-child(3) .row:last-child .header {
+.plan .col--big .header {
     flex-basis: 78%;
     padding-right: 120px;
 }
 
-.plan .container:nth-child(3) .row:last-child .description {
+.plan .col--big .description {
     flex-basis: 22%;
 }
 
-/* .plan .container:nth-child(3) .row:last-child .btn {
-    position: absolute;
-    width: fit-content;
-    padding-inline: 40px;
-    top: 40px;
-    right: 30px;
-} */
-
-.plan .container:nth-child(3) .row:last-child .body__description::after {
+.plan .col--big .body__description::after {
     display: none;
 }
 
