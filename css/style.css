@@ -543,3 +543,57 @@ button {
 .item__arrow {
     margin-inline: auto 45px;
 }
+
+/* Main Footer */
+.main-footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.main-footer__nav {
+    margin-bottom: 50px;
+}
+
+.main-footer__nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-footer__nav a:hover {
+    text-decoration: underline;
+}
+
+.main-footer__nav .col {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.main-footer .nav__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.main-footer .nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Footer Lang */
+.footer__lang {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: 50px;
+}
+
+.footer__lang:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 2px;
+    background-color: #A0A0A0;
+}
