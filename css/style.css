@@ -125,35 +125,41 @@ button {
     background-color: #B4D0E7;
 }
 
-.hero__header {
-    padding-bottom: 50px;
-}
-
 .hero__title {
     font-size: 76px;
     font-weight: bold;
 }
 
+.hero__body {
+    padding-top: 20px;
+}
+
+.hero__body .w-70 {
+    position: relative;
+}
+
 .hero__body .btn {
-    margin-bottom: 30px;
     padding-inline: 15px;
     line-height: 40px;
 }
 
-.hero .description__text:first-of-type {
-    margin-bottom: 30px;
+.hero .description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 45px;
+    aspect-ratio: 4/5;
 }
 
-.hero .description__text:last-of-type {
-    margin-bottom: 143px;
-}
-
-.hero .body__image {
-    position: relative;
+.hero .description i {
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .hero .body__image img {
     position: absolute;
+    bottom: -80px;
 }
 
 /* Business Plan */
