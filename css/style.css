@@ -374,6 +374,10 @@ button {
 }
 
 /* Team */
+.teams {
+    margin-bottom: 150px;
+}
+
 .teams__header {
     margin-bottom: 150px;
 }
@@ -388,7 +392,7 @@ button {
 }
 
 .teams .grid .col {
-    padding: 80px;
+    padding: 3vw;
 }
 
 .teams .grid .col--big {
@@ -433,10 +437,14 @@ button {
     background-color: #FFD830;
 }
 
-.team {
+.teams .grid .col {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.teams .col--big {
+    align-items: flex-start;
 }
 
 .team__img img {
@@ -447,4 +455,37 @@ button {
 
 .teams .col--big .team__img svg {
     max-width: 50%;
+}
+
+.team .body__text {
+    margin-bottom: 50px;
+}
+
+/* Teams CTA */
+.cta-wrapper {
+    padding-block: 130px;
+    background-color: #B4D0E7;
+}
+
+.cta-wrapper .row {
+    justify-content: space-between;
+}
+
+.cta-wrapper .col:first-child {
+    flex-basis: calc(100% / 4 * 2);
+}
+
+.cta-wrapper .col:last-child {
+    flex-grow: 0;
+    padding-top: 10px;
+}
+
+.cta-wrapper__title {
+    font-size: 38px;
+    color: #61082B;
+}
+
+.cta-wrapper .btn {
+    line-height: 45px;
+    padding-inline: 50px;
 }
