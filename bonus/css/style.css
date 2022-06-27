@@ -426,7 +426,7 @@ button {
 }
 
 .teams .grid .col--big {
-    padding: 2vw 50px 50px;
+    padding: 50px;
 }
 
 .teams .grid .col:nth-child(1) {
