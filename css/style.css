@@ -577,9 +577,8 @@ button {
     text-decoration: underline;
 }
 
-.main-footer__nav .col {
-    flex-grow: 1;
-    flex-shrink: 0;
+.main-footer__nav .row {
+    justify-content: space-between;
 }
 
 .main-footer .nav__title {
