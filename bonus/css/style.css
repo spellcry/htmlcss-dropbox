@@ -366,15 +366,6 @@ button {
     padding-bottom: 200px;
 }
 
-.operation .row:last-child {
-    flex-wrap: wrap;
-    gap: 60px 50px;
-}
-
-.operation .row:last-child .col {
-    flex-basis: calc(calc(100% - 50px * 2) / 3);
-}
-
 .operation__title {
     margin-bottom: 70px;
     font-size: 38px;
