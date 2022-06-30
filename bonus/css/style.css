@@ -527,7 +527,7 @@ button {
 
 .questions .container:last-child>.row>.col {
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .questions__list .item:first-child {
@@ -542,6 +542,16 @@ button {
 
 .item__arrow {
     margin-inline: auto 45px;
+}
+
+.questions__list .item .row:last-child {
+    display: none;
+    padding-top: 20px;
+    font-weight: normal;
+}
+
+.questions__list .item:hover .row:last-child {
+    display: block;
 }
 
 /* Main Footer */
